@@ -1,0 +1,183 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-23T23:41:23.571Z",
+        "line": 3,
+        "name": "As a user I want to see and verify City Bikes location",
+        "description": "",
+        "id": "validate-city-bikes-location;as-a-user-i-want-to-see-and-verify-city-bikes-location",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1620733700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to API",
+            "match": {
+              "location": "stepDefinition.StepsGermany.user_navigates_to_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2445595500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User request Get http request",
+            "match": {
+              "location": "stepDefinition.StepsGermany.user_request_get_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Response code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinition.StepsGermany.response_code_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2417612500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be able to find the all the networks\u0027 details",
+            "match": {
+              "location": "stepDefinition.StepsGermany.user_should_be_able_to_find_the_all_the_networks_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7447742000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to find the location of City bikes",
+            "match": {
+              "location": "stepDefinition.StepsGermany.user_should_be_able_to_find_the_location_of_city_bikes()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validate City Bikes location",
+    "description": "",
+    "id": "validate-city-bikes-location",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/cityBikes.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-23T23:41:37.729Z",
+        "line": 2,
+        "name": "Verify Franfurt\u0027s country, Longitude and Latitude",
+        "description": "",
+        "id": "validate-franfurt-is-in-germany-de;verify-franfurt-s-country--longitude-and-latitude",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 998300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to API",
+            "match": {
+              "location": "stepDefinition.StepsGermany.user_navigates_to_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 187890900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User request Get http request",
+            "match": {
+              "location": "stepDefinition.StepsGermany.user_request_get_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 819533400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should be able to find the all the networks\u0027 details",
+            "match": {
+              "location": "stepDefinition.StepsGermany.user_should_be_able_to_find_the_all_the_networks_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Response code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinition.StepsGermany.response_code_should_be(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19902565900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to find the Franfurt\u0027s country and Its latitude and longitude which should be \"DE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DE\"",
+                  "offset": 98
+                }
+              ],
+              "location": "stepDefinition.StepsGermany.user_should_be_able_to_find_the_franfurt_s_country_and_its_latitude_and_longitude_which_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "validate Franfurt is in Germany DE",
+    "description": "",
+    "id": "validate-franfurt-is-in-germany-de",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/germanyFeature.feature",
+    "tags": []
+  }
+]
